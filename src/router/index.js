@@ -1,26 +1,39 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import FirstRoute from '@/components/FirstRoute'
-import FirstRouteChild from '@/components/FirstRouteChild'
+import Home from '@/components/Home'
+import Nosotros from '@/components/Nosotros'
+import Servicios from '@/components/Servicios'
+import Portafolio from '@/components/Portafolio'
+import Detalle from '@/components/Detalle'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'Home',
+      component: Home
     },
     {
-      path: '/firstroute/:name',
-      name: 'FirstRoute',
-      component: FirstRoute,
+      path: '/nosotros/',
+      name: 'Nosotros',
+      component: Nosotros
+    },
+    {
+      path: '/servicios/',
+      name: 'Servicios',
+      component: Servicios
+    },
+    {
+      path: '/portafolio/',
+      name: 'Portafolio',
+      component: Portafolio,
       children: [
         {
-          path: 'child',
-          component: FirstRouteChild
+          path: 'detalle',
+          component: Detalle
         }
       ]
     }

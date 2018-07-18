@@ -1,15 +1,16 @@
 <template>
   <div class="hello">
-    <h1>{{msg}}</h1>
+    <h1>Detalle</h1>
+    <p>{{msg}}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'FirstRouteChild',
+  name: 'Detalle',
   data () {
     return {
-      msg: 'FirstRouteChild'
+      msg: 'Ofresco todo tipo de servicios'
     }
   }
 }

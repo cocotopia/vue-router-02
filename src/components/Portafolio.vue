@@ -1,17 +1,18 @@
 <template>
   <div class="hello">
-    <h1>{{msg}}</h1>
-    Hello {{ $route.params.name }}
+    <h1>Portafolio</h1>
+    <p>{{msg}}</p>
+    <!-- Hello {{ $route.params.name }} -->
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'FirstRoute',
+  name: 'Portafolio',
   data () {
     return {
-      msg: 'FirstRoute'
+      msg: 'Mi Portafolio'
     }
   }
 }
